@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body { height: 100%; }
+  body { margin: 0; font-family: poppins, "Helvetica Neue", sans-serif; }
+  nav{
+  position: fixed;
+  }
+  nav{ 
+    width: 100%; 
+    padding-block: 15px;
+    display: flex;
+    background:#f1f1f1;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    z-index:99;
+   & .icon_nav{
+         display : flex;
+         & .brand{
+             display : flex;
+             align-items: center;
+             & img{
+                 padding-left:40px;
+                 margin-left: 10px;
+             }
+         }
+         & ul{
+             list-style-type: none;
+             display: flex;
+             column-gap : 9%; 
+             padding-left: 25px;
+             font-size: 18px;
+             font-weight: bold;
+             & li{
+                 display: grid;
+                 cursor: pointer !important;
+             }
+  
+             & li:last-child{
+                 display: flex; 
+                 align-items: center;
+                 cursor: pointer; 
+                 & small{
+                     cursor: pointer;
+                     font-weight: bold;
+                     padding: 5px;
+                     border-radius: 20px;
+                     background-color: #D9D9D9;
+                     display: flex;
+                     align-items: center;
+                 }
+             }
+         }
+     }
+    & .text_menu{
+     display: flex;
+     justify-content: flex-end;
+     width: 100%;
+     padding-inline-end: 25px;
+       & ul{
+         list-style-type: none;
+         display: flex;
+         align-items: center;
+         gap : 18px;
+         padding-right:40px;
+       }
+    }
+  }
+  
+  .mat-181{
+  background-color:#FF5C00;
+  text-align: center;
+  border-radius: 14px;
+  width: 55px;
+  height: 22px;
+  }
+  .icon{
+    margin-left: 10px;
+  }
+  nav#mobile_nav{
+     display: flex;
+  
+   & .icon_nav{
+      width: 100%;
+      & .brand{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-inline:1%;
+         & mat-icon{
+             width: auto;
+             height: auto;
+             font-size: 36px;
+         }
+      }
+    } 
+  }
+  
+  @media screen and (max-width:768px) {
+     nav#desktop_nav{ 
+         display: none;
+     }
+  }
+  @media screen and (min-width:769px) {
+     nav#mobile_nav{ 
+         display: none;
+     }
+  }
+  
+.home_section_main{
+    position: relative;
+    top:98px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    & .sec_left{ 
+        & .sec_card{ 
+          margin-inline : auto;
+          width: 85%;
+          margin: 30px; 
+          margin-left: 50px;
+          padding: 16px;
+          border-radius: 8px;
+          box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25), -2px -2px 4px 0 rgba(0, 0, 0, 0.25); 
+           & .types{
+              & ul{
+                list-style-type: none;
+                display: flex;
+                text-align: center;
+                column-gap: 15px;
+                & li:first-child{
+                    color:red;
+                }
+              }
+           }
+          & .ft{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             margin-top: 10px;
+             margin-block-end: 10px;
+            & ._from,._to{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-bottom: 2px solid #7F8C8D;
+                padding-block-end:10px;
+            }
+            & ._icon{
+                border: 1px solid red;
+                padding: 10px;
+                border-radius: 50%;
+                margin-inline:5%;
+            }
+
+            & ._to{
+               text-align: end;
+            }
+          }
+          & .dr_dates{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             & .depature_date, .return_date{
+                width: 100%;
+                display: flex;
+                flex-direction: column; 
+                border-bottom: 2px solid #7F8C8D;
+                padding-block-end:10px;
+             }
+             & ._gap{
+                width: 40%;
+             }
+             & .return_date{
+                 text-align: end;
+             }
+          } 
+          & .travellers_class{
+             display: grid;
+             padding-block: 10px;
+             border-bottom: 2px solid #7F8C8D;
+          }
+          & ._s_details{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            text-align: left;
+            padding-block:15px;
+            & span{
+                text-align: center;
+            }
+          } 
+        } 
+    }
+    & .sec_right{
+        display: grid;
+        align-items: center;
+        grid-gap:10px 10px;
+        & .b1{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            & .s_b1{
+                width: 60%;
+                background-color: #8E8E8E;
+                background-image: url(img/axis.jpg);
+                padding-block: 100px;
+                text-align: center;  
+                border-radius: 6px;
+                display: flex;
+               justify-content: center;
+               margin-inline: auto;
+            }
+        }
+        & .b2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px;
+            & .s_b1,.s_b2{
+                background-color: #8E8E8E;
+                
+                padding-block: 25px;
+                text-align: center;  
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                margin-inline-end: 10%;
+            }
+        }
+        & ._card_banners{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 5%;
+            margin-block-start:45px;
+            & .card_d{
+                border: 1px solid black;
+                min-height: 197px;
+                margin-inline-end:8%;
+                border-radius: 5px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s;
+                & mat-icon{ 
+                    width: auto;
+                    height: auto;
+                    padding: 10px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -10%;
+                    left:-10%; 
+                } 
+            }
+            & .card_d:hover{
+               transform: scale(1.1);
+             }
+            & .card_1  mat-icon:nth-child(1){
+                    background: #4b24bf;
+            }
+            & .card_2  mat-icon:nth-child(1){
+                    background: #CE50D0;
+            }
+            & .card_3  mat-icon:nth-child(1){
+                    background: #e6dc51;
+            }
+
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .home_section_main{ 
+      position: relative;
+      top:78px;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      & .sec_left{ 
+        & .sec_card{ 
+          width: 95%;
+          margin-inline: auto;
+        }
+      }
+      & .sec_right{
+        margin-block : 10%;
+      }
+    }
+}
+@media screen and (max-width:768px) {
+    .home_section_main{
+      position: relative;
+      top:78px;
+       & .sec_right{
+         & .b2{
+             grid-template-columns: repeat(2,1fr)!important;
+             grid-row-gap: 10px;
+
+             & .s_b1,.s_b2{
+               width: 98%;
+               margin-inline:auto;
+             } 
+        }
+         & ._card_banners{
+            width: 90%;
+            margin-inline:auto;
+            grid-row-gap: 40px;
+            grid-column-gap: 10px ;
+            grid-template-columns: repeat(2,1fr);
+             & .card_d{
+                width: 80%;
+                margin-inline:auto;
+                position: relative;
+                transition: all .6s;
+                cursor: pointer;
+               & mat-icon{ 
+                    top:  -5%;
+                    left:-5%; 
+               } 
+            }
+             & .card_d:hover{
+               transform: scale(1.1);
+             }
+          }
+       } 
+    }
+}
+@media screen and (max-width:480px) {
+    .home_section_main{ 
+      grid-template-columns: repeat(1,1fr)!important;
+      justify-content: center;
+      & .sec_left{ 
+        & .sec_card{ 
+          width: 78%;
+          margin-inline: auto;
+        }
+      }
+      & .sec_right{
+        margin-block : 10%;
+        & .b1{
+          & .s_b1{
+            width: 88%;
+            margin-inline:auto;
+          }
+        }
+        & .b2{
+             grid-template-columns: repeat(1,1fr)!important;
+             grid-row-gap: 10px;
+
+             & .s_b1,.s_b2{
+               width: 88%;
+               margin-inline:auto;
+             } 
+        }
+        & ._card_banners{
+            grid-template-columns: repeat(1,1fr);
+            grid-row-gap: 3%;
+            & .card_d{
+                width: 75%;
+                margin-inline:auto;
+                position: relative;
+                transition: all .6s;
+                cursor: pointer;
+               & mat-icon{ 
+                    top:  -5%;
+                    left:-5%; 
+               } 
+            }
+             & .card_d:hover{
+               transform: scale(1.1);
+             }
+        }
+      }
+    }
+}
+.top_domestic_flights{
+    margin-block:8%;
+    box-sizing: border-box;
+    width: auto;
+   
+    & .places{
+     width: 60%;
+     margin: 20px;
+     display: flex;
+     column-gap: 15x; 
+     justify-content: space-between; 
+    }
+    & .flights_cards{
+        width: 85%;
+        margin-inline: auto;
+        margin-block: 3%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-gap: 10px 10px;
+        & .card_list{
+           display: flex;
+           flex-direction: column; 
+           padding: 4%;
+           height: 167px;
+           cursor: pointer;
+           transition: all .3s;
+           /* border-radius: 8px; */
+           /* box-shadow:  -2px -2px 17px rgba(127, 140, 141, 0.72),2px 2px 17px rgba(127, 140, 141, 0.72)  !important; */
+            border-radius: 17px;
+            border: 0px solid #000;
+
+            background: #FFF; 
+            box-shadow: -2px -2px 37px -14px rgba(127, 140, 141, 0.72);
+           & span{
+                color: #000; 
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 56px; /* 373.333% */
+                letter-spacing: 0.3px;
+           }
+
+        }
+         & .card_list:hover{
+                transform: scale(1.1);
+        } 
+    }
+}
+@media screen and (max-width:768px) {
+    .top_domestic_flights{
+        & .flights_cards{
+           grid-template-columns: repeat(2,1fr) ; 
+           grid-row-gap: 6%;
+            & .card_list{
+                width: 70%;
+                margin-inline:auto;
+            }
+             & .card_list:hover{
+                transform: scale(1.1);
+             } 
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .top_domestic_flights{
+       & h3{
+            margin-top: 90px;
+        }
+        & .places{
+            margin-top: 20px;
+            margin-left: 30px;
+            
+        }
+        & .flights_cards{
+           grid-template-columns: repeat(1,1fr) ; 
+            & .card_list{
+                width: 70%;
+                margin-inline:auto;
+
+            }
+             & .card_list:hover{
+                transform: scale(1.1);
+             } 
+        }
+    }
+}
+.top_international_flights{
+    box-sizing: border-box;
+    width: auto;
+ 
+    & .places{
+     width: 65%;
+     margin: 20px;
+     display: flex;
+     column-gap: 15x; 
+     justify-content: space-between; 
+    }
+    & .flights_cards{
+        width: 85%;
+        margin-inline: auto;
+        margin-block: 3%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr) ;
+        grid-gap: 10px 10px;
+        & .card_list{
+           display: flex;
+           flex-direction: column; 
+           padding: 4%;
+           height: 167px;
+           transition: all .3s;
+           /* border-radius: 8px; */
+           /* box-shadow:  -2px -2px 17px rgba(127, 140, 141, 0.72),2px 2px 17px rgba(127, 140, 141, 0.72)  !important; */
+            border-radius: 17px;
+            border: 0px solid #000;
+
+            background: #FFF;
+
+            box-shadow: -2px -2px 37px -14px rgba(127, 140, 141, 0.72);
+           & span{
+                color: #000; 
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 56px; /* 373.333% */
+                letter-spacing: 0.3px;
+           }
+        }
+        & .card_list:hover{
+                transform: scale(1.1);
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .top_international_flights{
+        & h3{
+            margin-top: 90px;
+        }
+        & .places{
+            margin-top: 20px;
+            margin-left: 30px;
+            
+        }
+        margin-block-end:8%;
+        & .flights_cards{
+           grid-template-columns: repeat(2,1fr) ; 
+           grid-row-gap: 6%;
+            & .card_list{
+                width: 70%;
+                margin-inline:auto;
+            }
+             & .card_list:hover{
+                transform: scale(1.1);
+             } 
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .top_international_flights{
+        padding-block:18%;
+        
+        & .flights_cards{
+           grid-template-columns: repeat(1,1fr) !important ; 
+            & .card_list{
+                width: 70%;
+                margin-inline:auto;
+            } 
+             & .card_list:hover{
+                transform: scale(1.1);
+             } 
+        }
+    }
+}
+
+.whyBlock_section{ 
+    display: flex; 
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-inline:auto;
+    margin-block:4%;
+    margin-left: 60px;
+    margin-top: 80px;
+    border-radius: 17px;
+    padding: 23px;
+    box-shadow: -2px -2px 15px rgba(127, 140, 141, 0.72),2px 2px 37px rgba(127, 140, 141, 0.72);
+    & b{
+        color: #000;  
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px; 
+        letter-spacing: -0.76px;
+        background: linear-gradient(90deg, #ea2331, rgba(67, 38, 78, 0.5));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+    & p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 40px;  
+        letter-spacing: -0.66px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .whyBlock_section{
+        width:90%;
+        margin-inline:auto; 
+    }
+    }
+  
+  @media screen and (max-width:480px) {
+    .whyBlock_section{
+        width:66%;
+        font-size: medium;
+        margin-inline:auto;
+        margin-bottom: 30px;
+        padding-top: 5px;
+    }
+    & h1{
+        font-size:medium;
+    }
+  }
+  
+.copyright{
+    background: black;
+    color:white;
+    padding-block: 10px;
+    text-align: center;
+}
+  

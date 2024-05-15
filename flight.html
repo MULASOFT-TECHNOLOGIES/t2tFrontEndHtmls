@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flight.css">
+    <link rel="icon" type="image/x-icon" href= "favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css" integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Flights </title>
+</head>
+<body>
+    <nav id="desktop_nav">
+        <div class="icon_nav">
+            <div class="brand">  
+                <img src=" assets/TIME2TRAWEL.png " alt="LOGO">
+            </div>
+            <ul> 
+                <li><mat-icon class="mat-18"><img src="assets/airplane.png" class="icoS" ></mat-icon><small> Flights </small></li>
+                <li><mat-icon class="mat-18"><img src="assets/bed1.png" class="icoS" ></mat-icon><small> Hotels </small></li>
+                <li><mat-icon class="mat-18"><img src="assets/bus1.png" class="icoS" ></mat-icon><small> Bus </small></li>
+                <li><mat-icon class="mat-18"><img src="assets/sunset1.png" class="icoS" ></mat-icon><small> holidays </small></li>
+                <li><mat-icon class="mat-18"><img src="assets/taxi-cab1.png" class="icoS"></mat-icon><small> Cabs </small></li>
+                <li><mat-icon class="mat-18"><img src="assets/passport1.png" class="icoS"></mat-icon><small> Visa </small></li>
+                <li><small> <mat-icon class="mat-181"> +More </mat-icon> </small> </li>  
+            </ul>
+        </div>
+        <div class="text_menu">
+            <ul>
+                <li><small>My Account</small></li>
+                <li><small>Support</small></li>
+                <li><small>Offers</small></li>
+                <li><small>Trawel For Business</small></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile_nav">
+        <div class="icon_nav">
+            <div class="brand">
+                <img src="assets/images/TIME2TRAWEL.png" alt="">
+                <mat-icon (click)="onClick()" class="mat-18">menu</mat-icon>
+            </div> 
+        </div>
+    </nav>
+    <div class="home_section_main">
+        <div class="sec_left">
+            <div class="sec_card">
+                <h4>Book Flights,Hotels and Holidays Packages</h4><br>
+                <div class="types">
+                    <ul>
+                        <li>ONE WAY</li>
+                        <li>ROUND TRIP</li>
+                        <li>MULTI-CITY</li>
+                    </ul>
+                </div>
+                <div class="ft">
+                   <div class="_from">
+                      <small>Depart From</small>
+                      <span>New Delhi</span>
+                      <span>DEL</span>
+                   </div>  
+                   <div class="_icon"><img src="assets/images/two-arrows.png" alt=""></div>  
+                   <div class="_to">
+                     <small>Depart From</small>
+                      <span>New Delhi</span>
+                      <span>DEL</span>
+                   </div>  
+                </div>
+                <div class="dr_dates">
+                    <div class="depature_date">
+                        <small>Departure Date</small>
+                      <span>1 Mar 24</span>
+                      <span>Friday</span>
+                    </div>
+                    <div class="_gap"></div>
+                    <div class="return_date">
+                        <small>Return Date</small>
+                        <span><a href="">Book Round Trip</a></span>
+                        <span><a href="">to save extra</a></span>
+                        
+                    </div>
+                 </div>
+                 <div class="travellers_class">
+                    <small>Traveller(s) Class</small>
+                    <span>1 Traveller,Economy</span>
+                 </div>
+                 <div class="_s_details">
+                     <span>Non stop Flights</span>
+                     <span>Student Fare</span>
+                     <span>Amed Forces</span>
+                     <span>Senior</span>
+                 </div>
+            </div>
+        </div>
+        <div class="sec_right">
+            <div class="b1">
+                 <div class="s_b1">
+                    
+                </div>
+            </div>
+            <div class="b2">
+                
+               
+            </div>
+            <div class="_card_banners">
+                <div class="card_d card_1">
+                   <mat-icon class="mat-18"><img src="assets/plane2.png"  class="icoS"></mat-icon> 
+                   <img src="img/hdfc.png" alt="" width="200px" height="200px"> 
+                </div>
+                <div class="card_d card_2">
+                     <mat-icon class="mat-18"><img src="assets/plane2.png"  class="icoS"></mat-icon> 
+                     <img src="img/offer.jpg" alt="" width="200px" height="200px"> 
+                </div>
+                <div class="card_d card_3">
+                     <mat-icon class="mat-18"><img src="assets/plane2.png"  class="icoS"></mat-icon> 
+                     <img src="img/offer1.jpg" alt="" width="200px" height="200px"> 
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="top_domestic_flights">
+        <h3>Top Domestic Flights Routes</h3>
+        <div class="places">
+            <span>From: </span>
+            <span>NEW DELHI</span>
+            <span>MUMBAI</span>
+            <span>BANGALORE</span>
+            <span>HYDERABAD</span>
+            <span>KOLKATA</span>
+            <span>OTHERS</span>
+        </div>
+        <div class="flights_cards">
+             <div class="card_list card_1">
+                <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_2">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_3">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_4">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+        </div>
+    </div>
+    <div class="top_international_flights">
+        <h3>Top International Flights Routes</h3>
+        <div class="places">
+            <span>From: </span>
+            <span>NEW DELHI</span>
+            <span>MUMBAI</span>
+            <span>BANGALORE</span>
+            <span>HYDERABAD</span>
+            <span>KOLKATA</span>
+            <span>OTHERS</span>
+        </div>
+        <div class="flights_cards">
+             <div class="card_list card_1">
+                <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_2">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_3">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+             <div class="card_list card_4">
+                 <span>Delhi</span> 
+                <small>Mon 2 Mar</small>
+                <span>Pune</span>
+             </div>
+        </div>
+    </div>
+    <div class="whyBlock_section">
+        <h1>Why book with Time2Trawel.com ?</h1>
+        <b>Book Flights,Hotels,Trains,Buses, Cruise and Holiday Packages</b>
+        <p>
+          On Time2Trawel.com, you can tailor your trip from end-to-end by scouring
+          suitable flights and making your flight booking before proceeding with your
+          hotel bookings. Time2Travel’s vast hotel repository will see you through
+          this process seamlessly. Any intervening journey can be conveniently planned
+          by searching up relevant train connectivity and making an IRCTC ticket
+          booking. Look up well-researched holiday packages, sift through cruise
+          packages and finalize your entire trip on just one platform.
+        </p>
+      </div>
+      <div class="copyright">
+        Copyright © 2024 Time2Ttrawel Online  India. All rights reserved
+    </div>
+    
+      

@@ -9,20 +9,21 @@ nav{
 position: fixed;
 }
 nav{ 
-  width: 100%;
+  width: 100%; 
   padding-block: 15px;
   display: flex;
-  background: #533E8D;
-  z-index: 99;
+  background:#f1f1f1;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  z-index:99;
  & .icon_nav{
        display: flex;
-      
        & .brand{
            display: flex;
            align-items: center;
            & img{
-              
                padding-left:40px;
+               margin-left: 10px;
            }
        }
        & ul{
@@ -35,7 +36,6 @@ nav{
            & li{
                display: grid;
                cursor: pointer !important;
-               
            }
 
            & li:last-child{
@@ -123,7 +123,7 @@ nav#mobile_nav{
   background-color: #FF5C00;
   border-radius: 30px;
   height: 50px;
-  
+
 }
 .my-button, .text {
 text-align: center;
@@ -135,6 +135,12 @@ font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   font-weight:800;
   padding:30px;
+}
+@media screen and (max-width:480px) {
+  .my-button{
+    margin-left: 75px;
+    margin-top: 50px;
+  }
 }
 
 .home_section_main{
@@ -246,7 +252,7 @@ font-size: 20px;
                 display: flex;
                justify-content: center;
                margin-inline: auto;
-               margin-top: 25px;
+              
             }
         }
         & .b2{
@@ -262,7 +268,6 @@ font-size: 20px;
                 justify-content: center;
                 margin-inline-end: 10%
             }
-
         }
         & ._card_banners{
             display: grid;
@@ -273,7 +278,7 @@ font-size: 20px;
                 border: 1px solid black;
                 min-height: 197px;
                 margin-inline-end:8%;
-                border-radius: 5px;
+                border-radius:5px;
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -289,7 +294,7 @@ font-size: 20px;
                     left:-10%; 
                     align-items: center;
                 } 
-              
+
             }
             & .card_d:hover{
                transform: scale(1.1);
@@ -303,7 +308,7 @@ font-size: 20px;
             & .card_3  mat-icon:nth-child(1){
                     background: #2C8095;
             }
-           
+
         }
     }
 }
@@ -333,6 +338,7 @@ font-size: 20px;
          & .b2{
              grid-template-columns: repeat(2,1fr)!important;
              grid-row-gap: 10px;
+             
 
              & .s_b1,.s_b2{
                width: 98%;
@@ -369,7 +375,7 @@ font-size: 20px;
       justify-content: center;
       & .sec_left{ 
         & .sec_card{ 
-          width: 95%;
+          width: 85%;
           margin-inline: auto;
         }
       }
@@ -377,7 +383,7 @@ font-size: 20px;
         margin-block : 10%;
         & .b1{
           & .s_b1{
-            width: 98%;
+            width: 88%;
             margin-inline:auto;
           }
         }
@@ -439,8 +445,10 @@ font-size: 20px;
         font-weight: 300;
         line-height: 46px;  
         letter-spacing: -0.66px;
+      
     }
 }
+
 h1{
     position: relative;
   font-size: 33px;
@@ -454,18 +462,19 @@ h1{
   display: inline-block;
 }
 @media screen and (max-width:768px) {
-    .whyBlock_section{
-        width:90%;
-        margin-inline:auto; 
-    }
+  .whyBlock_section{
+      width:90%;
+      margin-inline:auto; 
+      margin-left: 10px;
+  }
 }
 @media screen and (max-width:480px) {
-    .whyBlock_section{
-        width:90%;
-        margin-inline:auto; 
-    }
+  .whyBlock_section{
+      width:90%;
+      margin-inline:auto; 
+      margin-left: 12px;
+  }
 }
-
 
 @media screen and (max-width:480px) {
     .banner_or_image{
@@ -474,6 +483,7 @@ h1{
         margin-block:15%;
     }
 }
+
 .copyright{
   padding-bottom: 10px;
   background: black;

@@ -10,123 +10,110 @@ nav{
   position: fixed;
 }
 nav{ 
-    width: 100%;
-    padding-block: 15px;
-    display: flex;
-    background: #533E8D;
-    z-index: 99;
-   & .icon_nav{
-         display: flex;
-         & .brand{
-             display: flex;
-             align-items: center;
-             & img{
-                 
-                 padding:6px;
-             }
-         }
-         & ul{
-             list-style-type: none;
-             display: flex;
-             column-gap : 6%; 
-             font-size: 18px;
-             font-weight: bold;
-             & li{
-                 display: grid;
-                 cursor: pointer !important;
-                 
-             }
- 
-             & li:last-child{
-                 display: flex; 
-                 align-items: center;
-                 cursor: pointer; 
-                 & small{
-                     cursor: pointer;
-                     font-weight: bold;
-                     padding: 5px;
-                     border-radius: 20px;
-                     background-color: #D9D9D9;
-                     display: flex;
-                     align-items: center;
-                 }
-             }
-         }
-     }
-    & .text_menu{
-     display: flex;
-     justify-content: flex-end;
-     width: 100%;
-     padding-inline-end: 15px;
+  width: 100%; 
+  padding-block: 15px;
+  display: flex;
+  background:#f1f1f1;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  z-index:99;
+ & .icon_nav{
+       display: flex;
+       & .brand{
+           display: flex;
+           align-items: center;
+           & img{
+               padding-left:40px;
+               margin-left: 10px;
+           }
+       }
        & ul{
-         list-style-type: none;
-         display: flex;
-         align-items: center;
-         
-         gap : 18px;
-         
+           list-style-type: none;
+           display: flex;
+           column-gap : 9%; 
+           padding-left: 25px;
+           font-size: 18px;
+           font-weight: bold;
+           & li{
+               display: grid;
+               cursor: pointer !important;
+           }
+
+           & li:last-child{
+               display: flex; 
+               align-items: center;
+               cursor: pointer; 
+               & small{
+                   cursor: pointer;
+                   font-weight: bold;
+                   padding: 5px;
+                   border-radius: 20px;
+                   background-color: #D9D9D9;
+                   display: flex;
+                   align-items: center;
+               }
+           }
+       }
+   }
+  & .text_menu{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+   padding-inline-end: 25px;
+     & ul{
+       list-style-type: none;
+       display: flex;
+       align-items: center;
+       gap : 18px;
+       padding-right:40px;
+     }
+  }
+}
+
+.mat-181{
+background-color:#FF5C00;
+text-align: center;
+border-radius: 14px;
+width: 55px;
+height: 22px;
+}
+.icon{
+  margin-left: 10px;
+}
+nav#mobile_nav{
+   display: flex;
+
+ & .icon_nav{
+    width: 100%;
+    & .brand{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-inline:1%;
+       & mat-icon{
+           width: auto;
+           height: auto;
+           font-size: 36px;
        }
     }
- }
- .mat-181{
-  background-color: #FF5C00;
-  position: relative;
-  border-radius: 14px;
-  width: 55px;
-  height: 26px;
- }
- .ico{
-    margin-left: 10px;
- }
- nav#mobile_nav{
-     display: flex;
-  
-   & .icon_nav{
-      width: 100%;
-      & .brand{
-         width: 100%;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-inline:1%;
-         & mat-icon{
-             width: auto;
-             height: auto;
-             font-size: 36px;
-         }
-      }
-    } 
- }
- 
- @media screen and (max-width:768px) {
-     nav#desktop_nav{ 
-         display: none;
-     }
- }
- @media screen and (min-width:769px) {
-     nav#mobile_nav{ 
-         display: none;
-     }
- }
+  } 
+}
 
- .time2trawel {
-    width: 349px;
-    position: relative;
-    font-size: 30px;
-    letter-spacing: 0.06em;
-    line-height: 56px;
-    font-weight: 600;
-    color: #ff5c00;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 1px 0 0 #ff5c00, 0 1px 0 #ff5c00, -1px 0 0 #ff5c00, 0 -1px 0 #ff5c00;
-  }
+@media screen and (max-width:768px) {
+   nav#desktop_nav{ 
+       display: none;
+   }
+}
+@media screen and (min-width:769px) {
+   nav#mobile_nav{ 
+       display: none;
+   }
+}
   
   .my-button{
     margin:0auto;
-    margin-top:35px;
+    margin-top:53px;
     display: block;
     align-items: center;
     text-align: center;
@@ -147,22 +134,7 @@ nav{
     font-family: 'Times New Roman', Times, serif;
     font-weight:800;
     padding:30px;
-    
-   
-   
   }
-  .month-of-travel {
-    width: 310px;
-    position: relative;
-    font-size: 20px;
-    letter-spacing: -0.03em;
-    line-height: 34px;
-    
-    color: #000;
-    text-align: left;
-    display: inline-block;
-  }
-  
   
   .home_section_main{
       position: relative;
@@ -173,7 +145,7 @@ nav{
           & .sec_card{ 
             margin-inline : auto;
             width: 68%;
-            height: 60%;
+            height: 65%;
             font-size: 18px;
             font-weight: 300;
             margin: 10px; 
@@ -248,41 +220,59 @@ nav{
           } 
       }
       & .sec_right{
-          display: grid;
-          align-items: center;
-          grid-gap:10px 10px;
-          
-          & .b1{
-              display: grid;
-              grid-template-columns: repeat(1,1fr);
+        display: grid;
+        align-items: center;
+        grid-gap: 10px 10px;
+        
+        & .b1{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            & .s_b1{
+                width: 70%;
+                background-color: #ffffff;
+                background-image: url(img/banner.png);
+                border: 1px solid black;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding-block: 70px;
+                text-align: center;  
+                border-radius: 6px;
+                display: flex;
+               justify-content: center;
+               margin-inline: auto;
+               margin-top: 25px;
+            }
+        }
+
+        & .b2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 10px;
+            & .s_b1{
+              background-image: url(img/cashback.jpg);
+              width: 60%;
+              border: 1px solid black;
+              background-size: contain;
+              background-repeat: no-repeat;
+              border-radius: 6px;
+              display: flex;
               justify-content: center;
-              & .s_b1{
-                  width: 50%;
-                  background-color: #8E8E8E;
-                  padding-block: 70px;
-                  text-align: center;  
-                  border-radius: 6px;
-                  display: flex;
-                 justify-content: center;
-                 margin-inline: auto;
-                 margin-top: 25px;
-              }
-          }
-          & .b2{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-column-gap: 10px;
-              & .s_b1{
-                  background-color: #8E8E8E;
-                  padding-block: 75px;
-                  text-align: center;  
-                  border-radius: 6px;
-                  display: flex;
-                  justify-content: center;
-                  margin-inline-end: 10%
-              }
-  
-          }
+              margin-inline: auto;
+              margin-top: 25px;
+              box-shadow:#8E8E8E ;
+              
+            }
+            & .s_b1,.s_b2{
+                background-color: #ffffff;
+                padding-block: 75px;
+                text-align: center;  
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                margin-inline-end: 10%;
+            }
+        }
           & ._card_banners{
               display: grid;
               grid-template-columns: repeat(3,1fr);
@@ -362,6 +352,7 @@ nav{
               width: 90%;
               margin-inline:auto;
               grid-row-gap: 40px;
+              margin-left: 20px;
               grid-column-gap: 10px ;
               grid-template-columns: repeat(2,1fr);
                & .card_d{
@@ -386,14 +377,17 @@ nav{
       .home_section_main{ 
         grid-template-columns: repeat(1,1fr)!important;
         justify-content: center;
+        width: 100%;
+
         & .sec_left{ 
           & .sec_card{ 
-            width: 95%;
+            width: 90%;
             margin-inline: auto;
           }
         }
         & .sec_right{
           margin-block : 10%;
+          margin-left: 10px;
           & .b1{
             & .s_b1{
               width: 98%;
@@ -415,6 +409,7 @@ nav{
               & .card_d{
                   width: 80%;
                   margin-inline:auto;
+               
                   position: relative;
                   transition: all .6s;
                   cursor: pointer;
@@ -430,6 +425,21 @@ nav{
         }
       }
   }
+  @media screen and (max-width:768px) {
+    .my-button{
+     margin-left: 60px;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .time2trawel{
+      position:relative;
+    }
+  }  
+  @media screen and (max-width:768px) {
+    .time2trawel-is-one{
+      position:relative;
+    }
+  }  
   .banner_or_image{
     width: 90%;
     margin-inline:auto;
@@ -443,61 +453,69 @@ nav{
     margin-block:2%;
 }
 
-.time2trawel-holidays {
- padding-left: 25px;
- padding-top: 10px;
- margin-bottom: 10px;
-  position: relative;
-  font-size: 33px;
-  letter-spacing: -0.04em;
-  line-height: 56px;
-  font-weight: 400;
-  font-family: Montserrat;
-  background: linear-gradient(90deg, #ea2331, rgba(67, 38, 78, 0.5));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+.whyBlock_section{ 
+  display: flex; 
+  width: 50%;
+  height: auto;
+  flex-direction: column;
+  margin-inline:auto;
+  margin-block:4%;
+  border-radius: 17px;
+  padding: 15px;
+  box-shadow: -2px -2px 15px rgba(127, 140, 141, 0.72),2px 2px 37px rgba(127, 140, 141, 0.72);
+  & b{
+      color: #000;  
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 56px; 
+      letter-spacing: -0.76px;
+  }
+  & p{
+      color: #000;
+      font-family: Montserrat;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;  
+      letter-spacing: -0.66px;
+  }
 }
-.book-domestic-and {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 9px;
-  font-size: 28px;
-  letter-spacing: -0.04em;
-  font-weight: 250;
-  font-family: Montserrat;
-  color: #000;
-  
-  display: inline-block;
+@media screen and (max-width:768px) {
+  .whyBlock_section{
+      width:90%;
+      margin-inline:auto; 
+      margin-left: 10px;
+  }
 }
-
-.time2trawel-is-one {
-  padding-left: 25px;
-  position: relative;
-  font-size: 20px;
-  letter-spacing: -0.04em;
-  font-weight: 300;
-  color: #000;
-  white-space: pre-wrap;
-  display: flex;
-  line-height: 54px;
+@media screen and (max-width:480px) {
+  .whyBlock_section{
+      width:90%;
+      margin-inline:auto; 
+      margin-left: 12px;
+  }
 }
-
-
-
 @media screen and (max-width:480px) {
     .banner_or_image{
         width: 98%;
         margin-inline:auto;
         margin-block:17%;
+        margin-left: 15px;
        
     }
 }
  .copyright{
     padding-bottom: 10px;
+    width: 100%;
     background: black;
     color:white;
     padding-block: 10px;
     text-align: center;
+    
   }
-  
+  @media screen and (max-width:480px){
+  .copyright{
+    margin-left: 10px;
+  }
+}
